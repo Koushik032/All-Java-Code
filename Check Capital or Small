@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class MyInfo {
+    public static void main(String[] args){
+        System.out.println("Enter a Character");
+
+        Scanner input = new Scanner(System.in);
+
+        char ch;
+
+        ch = input.next().charAt(0);
+
+        if ( ch >= 'a' && ch <= 'z' )
+        {
+            System.out.println("Character Is Small Letter");
+        }
+        else if ( ch >= 'A' && ch <= 'Z' )
+        {
+            System.out.println("Character Is Capital Letter");
+        }
+        else
+        {
+            System.out.println("Not A Letter");
+        }
+    }
+}
