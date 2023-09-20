@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class MyInfo {
+    public static void main(String[] args){
+        System.out.println("Enter a Number");
+
+        Scanner input = new Scanner(System.in);
+
+        int num, sum = 1;
+
+        num = input.nextInt();
+
+        boolean done = false;
+
+        for ( int i = 2; i <= num-1 ; i++ )
+        {
+            if ( num % 2 == 0 )
+            {
+                done = true;
+                break;
+            }
+        }
+
+        if ( done )
+        System.out.println("Not Prime");
+        else
+        System.out.println("Prime");
+        
+    }
+}
