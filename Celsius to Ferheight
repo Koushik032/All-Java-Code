@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class MyInfo {
+    public static void main(String[] args){
+        System.out.println("Enter any Number");
+
+        Scanner input = new Scanner(System.in);
+
+        double cell;
+
+        cell = input.nextDouble();
+
+        double fer = (1.8 * cell) + 32;
+
+        System.out.println(fer);
+    }
+}
