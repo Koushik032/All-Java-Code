@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+public class MyInfo {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        ArrayList<Integer> num = new ArrayList<>();
+
+        System.out.println("Enter A Number");
+        int n;
+        n = input.nextInt();
+
+        for ( int i = 0; i < n; i++ )
+        {
+            System.out.print("Enter "+i+"th Elements :");
+            num.add(input.nextInt());
+        }
+
+        for ( int u : num )
+        {
+            System.out.print(u+" ");
+        }
+    }
+}
