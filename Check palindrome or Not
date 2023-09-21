@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class MyInfo {
+    public static void main(String[] args){
+        System.out.println("Enter a Number");
+
+        Scanner input = new Scanner(System.in);
+
+        int num, sum = 0;
+        
+
+        num = input.nextInt();
+        int a = num;
+
+        while ( num != 0 )
+        {
+            int num1 = num % 10;
+            sum = (sum * 10) + num1;
+            //System.out.println(num1);
+            num /= 10;
+        }
+        System.out.println(sum);
+
+        if ( a == sum )System.out.println("Palindeome");
+        else System.out.println("Not Palindrome");
+        
+    }
+}
