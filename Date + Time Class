@@ -11,5 +11,10 @@ public class MyInfo {
         String s = Dateformet.format(date);
 
         System.out.println(s);
+
+        LocalTime time = LocalTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("hh/mm/ss");
+        String s1 = time.format(formatter);
+        System.out.println(s1);
     }
 }
